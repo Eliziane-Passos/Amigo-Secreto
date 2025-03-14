@@ -20,9 +20,3 @@ function limparCampo() {
     amigoIncluido.value = '';
 }
 
-function sortearAmigo () {
-      return Math.random () * amigos.length;
-}
-
-console.log (seuAmigoSecreto);
-console.log (amigos);
