@@ -30,6 +30,7 @@ body {
     width: 100%;
 }
 
+
 /* Banner */
 .header-banner {
     flex: 40%;
@@ -59,6 +60,14 @@ body {
     font-weight: 900;
     font-style: italic;
     color: var(--color-white);
+}
+
+.incluso {
+    font-size: 24px;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--color-text);
 }
 
 .section-title {
