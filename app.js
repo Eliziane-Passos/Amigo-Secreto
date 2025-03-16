@@ -1,34 +1,65 @@
-//O principal objetivo deste desafio é fortalecer suas habilidades em lógica de programação. Aqui você deverá desenvolver a lógica para resolver o problema.
 let amigos = [];
-let seuAmigoSecreto = sortearAmigo();
+console.log(amigos);
 
 function adicionarAmigo() {
-    let amigoIncluido = document.querySelector ('input').value;
-    
-    if (amigoIncluido == "") {
-        alert ('Por favor, inserir um nome');
-    } 
-    else {
+    let amigoIncluido = document.querySelector('input').value.trim();
+
+    if (amigoIncluido == ""){
+        exibirTextoNaTela ('h2','Por favor, adicione um nome para o sorteio');
+        alert('Por favor, insira um nome.');
+    }
+    else { 
         amigos.push(amigoIncluido);
-        alert ("Amigo incluído")
+        mostrarNome();
         limparCampo();
+        exibirTextoNaTela ('h2', 'Digite o nome dos seus amigos');
+        
+        atualizacaolista();
     }
 }
 
+function mostrarNome() {
+    let nomeDiv = document.getElementById('nome');
+    nomeDiv.textContent = 'Amigo incluído!';  
+
+    setTimeout(() => {
+        nomeDiv.textContent = '';  
+        }, 2000);
+
+}
+
 function limparCampo() {
-    amigoIncluido = document.querySelector('input');
-    amigoIncluido.value = '';
+    amigoIncluido= document.querySelector('input');
+    amigoIncluido.value ='';
 }
 
-function atualizacaolista (amigos) {
-       // Limpa a lista antes de adicionar novos elementos
-    let lista = document.querySelector('listaDeAmigos');
-    lista.innerHTML = '';
-
-    // Percorre o array de amigos e adiciona cada nome como um elemento <li>
-    amigos.forEach(amigo => {
-        const li = document.createElement('li'); // Cria um novo elemento <li>
-        li.textContent = amigo; // Define o texto do <li> como o nome do amigo
-        lista.appendChild(li); // Adiciona o <li> à lista
-    });
+function exibirTextoNaTela(tag,texto) {
+    let campo = document.querySelector(tag);
+    campo.innerHTML = texto;
 }
+
+function atualizacaolista () {
+    let lista = document.getElementById ('listaAmigos');
+    lista.innerHTML= ''; 
+
+ amigos.forEach(amigo => {
+     let li = document.createElement('li');
+     li.textContent = amigo; 
+     lista.appendChild(li); 
+ });
+}
+
+function sortearAmigo() {
+    if (amigos.length ===0 ){
+        exibirTextoNaTela ('h2', 'Adicione amigos antes de sortear.');
+        alert ('Não é possível realizar o sorteio, pois a lista de amigos está vazia.');
+    }
+else{
+    let amigoAleatorio = Math.floor ( Math.random() * amigos.length);
+    let amigoSorteado = amigos [amigoAleatorio];
+    let resultado = document.getElementById('resultado');
+    resultado.innerHTML = `Seu amigo secreto é: <strong>${amigoSorteado}</strong>`;
+  }
+
+}
+   
