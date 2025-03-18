@@ -17,12 +17,12 @@ Amigo Secreto é um site desenvolvido para tornar seu sorteio de amigo oculto ma
     ❌ **Espaço vazio**
             ⏩ Caso for adicionado um espaço em branco, receberá uma mensagem informando que esta vazio  e ao apertar ok  uma extenção da  mensagem permanecerá no lealt até que seja inserido um nome valido. 
 
-<img src="//assets/EspacoVazio.gif" alt="Desmostração adicionando espaço vazio.">
+![Desmostração adicionando espaço vazio.](https://github.com/user-attachments/assets/0eeba0c0-31a8-436b-85f8-4320e04947ff)
  
     ❌**Sorteio nulo**
             ⏩E o mesmo acontece se tentar sortear sem nenhum nome incluído, receberá uma mensagem e ao apertar ok  uma extenção da  mensagem permanecerá no lealt até que seja inserido um nome valido. 
 
-<img src="//assets/sorteioNulo.gif" alt="Desmostração sorteio sem lista.">
+![Desmostração sorteio sem lista.](https://github.com/user-attachments/assets/3d20db74-ca5f-48e2-80dd-92cec957181d)
 
 ---
 
