@@ -58,7 +58,7 @@ else{
     let amigoAleatorio = Math.floor ( Math.random() * amigos.length);
     let amigoSorteado = amigos [amigoAleatorio];
     let resultado = document.getElementById('resultado');
-    resultado.innerHTML = `Seu amigo secreto é: <strong>${amigoSorteado}</strong>`;
+    resultado.innerHTML = `Seu amigo secreto é: <strong class='texto-destaque' >${amigoSorteado}</strong>`;
   }
 
 }

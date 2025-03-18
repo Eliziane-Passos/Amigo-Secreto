@@ -1,9 +1,9 @@
 :root {
-    --color-primary: #4B69FD;
+    --color-primary: #7886C7;
     --color-secondary: #FFF9EB;
-    --color-tertiary: #C4C4C4;
-    --color-button: #fe652b;
-    --color-button-hover: #e55720;
+    --color-tertiary: #BAD8B6;
+    --color-button: #2D336B;
+    --color-button-hover: #BF3131;
     --color-text: #444444;
     --color-white: #FFFFFF;
 }
@@ -28,6 +28,11 @@ body {
     flex-direction: column;
     height: 100%;
     width: 100%;
+}
+
+.amigoOculto {
+    padding: 2%;
+    width: 25%;
 }
 
 
@@ -137,18 +142,26 @@ button {
 /* Listas */
 ul {
     list-style-type: none;
-    color: var(--color-text);
+    color: #0D4715;
     font-family: "Inter", sans-serif;
     font-size: 18px;
     margin: 20px 0;
+    font-weight: bold;
+    text-align: center;
+
 }
 
 .result-list {
     margin-top: 15px;
-    color: #05DF05;
+    color: #3B5360;
     font-size: 22px;
     font-weight: bold;
     text-align: center;
+}
+
+.texto-destaque{
+    font-weight: bold;
+    color:#BF3131;
 }
 
 /* Botão de sortear título */
