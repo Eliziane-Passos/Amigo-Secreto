@@ -11,18 +11,18 @@ Amigo Secreto é um site desenvolvido para tornar seu sorteio de amigo oculto ma
 
     ✔️ **Sortear** 
            ⏩ Depois que todos os nomes forem adicionados, basta pressiona o botão "Sortear amigo" para descobrir quem foi escolhido. Em seguida veja o resultado. 
-![Desmostração adicioando nome e sorteando.](//assets/AdicicionarNome.gif);
-<img src="//assets/AdicicionarNome.gif" alt="Desmostração adicioando nome e sorteando." width="150px">
+
+<img src="//assets/AdicicionarNome.gif" alt="Desmostração adicioando nome e sorteando.">
 
     ❌ **Espaço vazio**
             ⏩ Caso for adicionado um espaço em branco, receberá uma mensagem informando que esta vazio  e ao apertar ok  uma extenção da  mensagem permanecerá no lealt até que seja inserido um nome valido. 
 
-<img src="//assets/EspacoVazio.gif" alt="Desmostração adicionando espaço vazio." width="150px">
+<img src="//assets/EspacoVazio.gif" alt="Desmostração adicionando espaço vazio.">
  
     ❌**Sorteio nulo**
             ⏩E o mesmo acontece se tentar sortear sem nenhum nome incluído, receberá uma mensagem e ao apertar ok  uma extenção da  mensagem permanecerá no lealt até que seja inserido um nome valido. 
 
-<img src="//assets/sorteioNulo.gif" alt="Desmostração sorteio sem lista." width= 150px>
+<img src="//assets/sorteioNulo.gif" alt="Desmostração sorteio sem lista.">
 
 ---
 
